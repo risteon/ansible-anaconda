@@ -20,7 +20,6 @@
       ansible.builtin.file:
         path: "{{ anaconda_tmp_dir }}"
         state: directory
-        mode: '755'
 
     - name: Downloading {{ anaconda_installer_url }} to {{ anaconda_installer_tmp_sh }}
       become: true
